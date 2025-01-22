@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo DOM</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Estilo/style.css">
 </head>
 <body>
     <h1>Iniciando com o p DOM</h1>
-    <p>aqui vai o resultado</p>
-    <div>CLIQUE EM MIM</div>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg"><strong>CLIQUE EM MIM</strong></div>
+    <script>
+        const p1 = document.getElementsByTagName('p')[0]       /*selecionou o primeiro parágrafo por MARCA*/
+        window.document.write('Está escrito assim: ' + p1.innerHTML)    /*mostrou na tela*/
+       
+        /*window.alert('Está escrito assim: ' + p1.innerHTML) - mostra um alerta na tela*/
+        /* p1.style.color = "blue" - mudou a cor só do primeiro parágrafo*/
+
+        /*const d = window.document.getElementById('msg') - seleciona por ID
+        d.style.background = 'white'/*
+
+       // d.innerText = 'Estou aguardando...' - modifiquei o conteudo da DIV
+       /*const d = document.getElementesByName ('msg')[0] - seleciona por NAME.
+       d.innerText = 'Olá' */
+
+       const d = document.querySelector('div#msg')  /*mais prático.*/
+       d.style.background = 'white'
+        
+    </script>
 </body>
 </html>
