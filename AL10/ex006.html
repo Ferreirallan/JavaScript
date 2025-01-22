@@ -9,7 +9,28 @@
 <body>
     <div id="area">
         Interaja...
-
     </div>
+    <script>
+        const area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        function clicar() {
+            
+            area.innerText = 'mundial'
+            area.style.background = 'blue'
+        }
+        function entrar() {
+            
+            area.innerText = 'campeão'
+
+        }
+        function sair() {
+            
+            area.innerText = 'palmeiras'
+            area.style.background = 'rgba(165, 42, 42, 0.76)'
+        }
+
+    </script>
 </body>
 </html>
