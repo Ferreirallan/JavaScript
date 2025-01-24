@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Descubra a sua nacionalidade!!</h1>
+   Vivendo em país <input type="text" name="pais" id="pais">
+   <input type="button" value="Verificar" onclick="ver()">
+<div id="res">
+
+</div>
+   <script>
+    function ver () {
+        const pais = document.querySelector('input#pais') 
+        const res = document.querySelector ('div#res')
+        const nac = (pais.value)
+        res.innerHTML = `<p> Você é do país <strong>${nac}</strong></p>`
+        if (nac == 'EUA' ){
+           res.innerHTML +='Você é Norte Americano'
+        } else {
+           res.innerHTML +='Você é Estrangeiro'
+}
+    }
+   </script>
+</body>
+</html>
