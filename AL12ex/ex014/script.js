@@ -1,8 +1,8 @@
 function carregar() {
-var msg = window.document.getElementById("msg");
+const msg = window.document.getElementById("msg");
 const img = window.document.getElementById("imagem");
 const data = new Date();
-var hora = data.getHours();
+const hora = data.getHours();
 msg.innerHTML = `Agora são ${hora} horas.`;
 if (hora >= 0 && hora < 12) {
     // Bom dia!
