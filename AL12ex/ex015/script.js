@@ -5,16 +5,16 @@ function verificar() {
    const res = document.querySelector('div#res');   
    if (fano.value.length == 0 || Number (fano.value) > ano) {
       window.alert('[ERRO] Verifique os dados e tente novamente!');
-   }    else{
-            const fsex = document.getElementsByName('radsex');
-            const idade = ano - Number(fano.value);
-            const genero = ''
-            if (fsex[0].checked) {
-                genero = 'Homem';           
-   }else if (fsex[1].checked) {
-    genero = 'Mulher';
-}
-res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;  
-}
-
+   } else{
+      const fsex = document.getElementsByName('radsex');
+      const idade = ano - Number(fano.value);
+      const gênero = '';
+      if (fsex[0].checked) {
+         gênero = 'Homem';
+      } else if (fsex[1].checked) {
+         gênero = 'Mulher';
+      }
+      res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`;
+   }
+            
 }
